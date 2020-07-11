@@ -1,0 +1,39 @@
+name: nsdemo
+main: cc.wanforme.nsdemo.NsDemo
+version: "1.0.0"
+# nukkit API 版本号居然更新了，funny
+api: ["2.0.0"]
+
+# 启动时加载
+load: STARTUP
+
+author: wanne
+description: spring-nukkit-plugin demo
+# to do github address
+website: 
+
+# 软依赖，加载时非必要
+softdepend: []
+# 依赖，加载时必要
+depend: []
+# 自定义前缀，暂时没发现有什么用
+#prefix: PM
+# 加载前需要加载哪些插件
+loadbefore: []
+
+
+commands: 
+  nsd: 
+    description: test command
+    usage: "/nsd"
+    permission: NsDemo.command.nsd
+    permission-message: "no permission to execute nsd！"
+    
+permissions: 
+  NsDemo.command.nsd: 
+    description: "nsd default permission"
+    default: op
+#   children:
+#     PMPlus.command.pm.test:
+#       description: "Use the test feature in the example command"
+#       default: true
