@@ -16,11 +16,34 @@
 		<nukkit.version>2.0.0-SNAPSHOT</nukkit.version>
 	</properties>
 
+    <repositories>
+        <repository>
+            <id>wannukit-repo-release</id>
+            <url>http://www.repo.wanforme.cc/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>wannukit-repo-snapshot</id>
+            <url>http://www.repo.wanforme.cc/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>cc.wanforme.nukkit</groupId>
 			<artifactId>wannukkit-spring-boot-starter</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<!-- 
 		<dependency>
